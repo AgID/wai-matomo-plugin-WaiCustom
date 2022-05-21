@@ -12,6 +12,7 @@
 namespace Piwik\Plugins\WaiCustom;
 
 use Piwik\Tracker\Model as TrackerModel;
+use Piwik\Piwik;
 
 /**
  * API for plugin WaiCustom
@@ -28,6 +29,8 @@ class API extends \Piwik\Plugin\API
      */
     public static function isActive($idSite)
     {
+        Piwik::checkUserHasViewAccess($idSite);
+
         $trackerModel = new TrackerModel();
         return !$trackerModel->isSiteEmpty($idSite);
     }

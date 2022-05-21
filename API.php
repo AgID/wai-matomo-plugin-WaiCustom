@@ -23,13 +23,12 @@ class API extends \Piwik\Plugin\API
     /**
      * Returns wether the website has tracked any traffic
      *
-     * @throws Exception if the site ID doesn't exist or the user doesn't have access to it
      * @param int $idSite
      * @return boolean
      */
-    public static function isActive($siteId)
+    public static function isActive($idSite)
     {
         $trackerModel = new TrackerModel();
-        return !$trackerModel->isSiteEmpty($siteId);
+        return !$trackerModel->isSiteEmpty($idSite);
     }
 }

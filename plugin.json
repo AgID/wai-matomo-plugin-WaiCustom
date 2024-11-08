@@ -1,7 +1,7 @@
 {
     "name": "WaiCustom",
     "description": "Add some custom API needed for the WAI platform.",
-    "version": "0.1.0",
+    "version": "0.3.1",
     "theme": false,
     "require": {
         "piwik": ">=3.13.0-stable,<5.0.0-b1"

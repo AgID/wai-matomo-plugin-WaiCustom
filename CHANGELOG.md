@@ -1,6 +1,10 @@
 # Changelog
 
-## 0.3.0
+## 0.4.0
+
+Disable some diagnostics for performance reasons
+
+## 0.3.0 - 0.3.1
 
 Updated Matomo version requirement
 
